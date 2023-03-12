@@ -92,7 +92,6 @@ input[type='radio'] {
 .main-dropdown:hover .dropdown__input-arrow:after {
   width: 14px;
   height: 14px;
-  /* top: 6px; */
   scale: 1;
   border-top: 3.2px solid #ff4500;
   border-right: 3.2px solid #ff4500;
@@ -144,6 +143,7 @@ input[type='radio']:hover ~ .dropdown__content:hover {
   }
 
   .main-dropdown {
+    width: 97vw;
     max-width: 97vw;
     padding: 0 3vw;
   }
@@ -158,11 +158,27 @@ input[type='radio']:hover ~ .dropdown__content:hover {
   }
 
   .main-dropdown {
+    width: 97vw;
     max-width: 98vw;
     padding: 0 2vw;
   }
 
   .dropdown {
     font-size: 0.2em;
+  }
+
+  input[type='radio']:checked ~ .dropdown__content {
+    margin: 20px;
+    height: 170px;
+  }
+
+  input[type='radio']:hover ~ .dropdown__content {
+    margin: 20px;
+    height: 170px;
+  }
+
+  input[type='radio']:hover ~ .dropdown__content:hover {
+    margin: 20px;
+    height: 170px;
   }
 }
