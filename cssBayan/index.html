@@ -5,11 +5,54 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>cssBayan</title>
+  <link rel="stylesheet" href="./reset.css" />
+  <link rel="stylesheet" href="./index.css" />
+
 </head>
 
 <body>
-  asdasd
+  <header>
+    <h1 class="h1-title">cssBayan</h1>
+  </header>
+  <main class="main-dropdown">
+    <div class="dropdown">
+      <!-- <span class="dropdown__border"></span> -->
+      <input type="radio" name='radioMem' id="radioMem-one" checked>
+      <label for="radioMem-one" class="dropdown__input">Click to Expand
+        <span class="dropdown__input-title"></span>
+        <span class="dropdown__input-arrow"></span>
+      </label>
+      <!-- <label for="radioMem-one" class="dropdown__content"> -->
+      <img src="./assets/memes-one.jpg" alt='memes-one' class="dropdown__content">
+      <!-- </label> -->
+    </div>
+
+    <div class="dropdown">
+      <span class="dropdown__border"></span>
+      <input type="radio" name='radioMem' id="radioMem-two">
+      <label for="radioMem-two" class="dropdown__input">Click to Expand
+        <span class="dropdown__input-title"></span>
+        <span class="dropdown__input-arrow"></span>
+      </label>
+      <!-- <label for="radioMem-two" class="dropdown__content"> -->
+      <img src="./assets/memes-one.jpg" alt='memes-two' class="dropdown__content">
+      <!-- </label> -->
+    </div>
+
+    <div class="dropdown">
+      <span class="dropdown__border"></span>
+      <input type="radio" name='radioMem' id="radioMem-tree">
+      <label for="radioMem-tree" class="dropdown__input">Click to Expand
+        <span class="dropdown__input-title"></span>
+        <span class="dropdown__input-arrow"></span>
+      </label>
+      <!-- <label for="radioMem-tree" class="dropdown__content"> -->
+      <img src="./assets/memes-one.jpg" alt='memes-tree' class="dropdown__content">
+      <!-- </label> -->
+    </div>
+  </main>
+
 </body>
 
 </html>

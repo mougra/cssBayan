@@ -1,0 +1,56 @@
+.h1-title {
+}
+
+.main-dropdown {
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+input[type='radio'] {
+  display: none;
+}
+
+.dropdown__content {
+  width: 500px;
+}
+
+input[type='radio'] ~ .dropdown__content {
+  height: 0;
+
+  -moz-transition: height 1s;
+  -webkit-transition: height 1s;
+  -o-transition: height 1s;
+  transition: height 1s;
+}
+
+input[type='radio']:checked ~ .dropdown__content {
+  height: 300px;
+  /* background-size:  */
+  /* transition: height 500px; */
+}
+
+/* 
+.radioMem-one {
+  max-height: 0;
+  transition: max-height 2s ease;
+}
+.radioMem-one:checked {
+  transition: max-height 30%;
+} */
+
+/* .mem {
+  display: none;
+  margin: auto;
+  cursor: pointer;
+  max-height: 0;
+  transition: max-height 0.5s ease;
+}
+
+.mem:checked {
+  transition: max-height 30%;
+} */
